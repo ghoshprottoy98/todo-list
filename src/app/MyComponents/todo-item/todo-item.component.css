@@ -1,3 +1,26 @@
 .strike{
+
+    background: #888;
+    color: #fff;
     text-decoration: line-through;
 }
+
+.list{
+    background-color: rgb(193, 193, 193);
+    padding-left: 1rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    text-decoration: solid;
+    border-bottom: 2px solid black;
+}
+
+.button {
+    background-color: #4CAF50; /* Green */
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+  }

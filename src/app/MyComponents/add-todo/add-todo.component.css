@@ -1,0 +1,14 @@
+.header {
+    background-color: #f44336;
+    padding: 30px 40px;
+    color: white;
+    text-align: center;
+    justify-content: center;
+  }
+
+.form-group{
+
+  text-align: left;
+  padding-bottom: 2rem;
+}
+
