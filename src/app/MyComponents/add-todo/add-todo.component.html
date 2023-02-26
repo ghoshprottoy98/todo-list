@@ -1,6 +1,6 @@
 <div id="myDIV" class="header">
     <h4>Enter details below</h4>
-    <form (ngSubmit)="onSubmit()">
+    <form #todolist='ngForm' class="form" (ngSubmit)="onSubmit();todolist.reset();">
 
         <div class="form-group">
           <label for="title ">Title</label>
