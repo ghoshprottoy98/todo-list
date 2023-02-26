@@ -1,4 +1,3 @@
-import { stringify } from '@angular/compiler/src/util';
 import { Component, OnInit } from '@angular/core';
 import { Todo } from "src/app/Todo";
 
@@ -8,18 +7,25 @@ import { Todo } from "src/app/Todo";
   styleUrls: ['./todos.component.css']
 })
 export class TodosComponent implements OnInit {
-  localItem: string;
-  todos: Todo[];
+
+  localItem!: string | null;
+  todos!: Todo[];
+
+
   constructor() {
+
     this.localItem = localStorage.getItem("todos");
-    if(this.localItem == null){
-      this.todos = [];
-    }
-    else{
+
+    if(this.localItem !== null)
+    { 
       this.todos = JSON.parse(this.localItem);
     }
+    else
+    {
+      this.todos = [];
+    }
 
-  }
+  };
 
   ngOnInit(): void {}
 
